@@ -6,13 +6,14 @@
   </head>
   <body>
     <div class="xxx">
-    <h1>予測結果</h1>
-    <img src={{img}} alt="今回の画像" title="今回の画像">
-    {% for ban,desc,kaku in namae %}
-      <p class="zyuni">{{ban}}. {{desc}} {{kaku}}%</p>
-    {% endfor %}
-    <a href="./">TOPに飛びます</a>
-  </div>
+      <h1>予測結果</h1>
+      <img src={{img}} alt="今回の画像" title="今回の画像">
+      <p>瞳の縦横比率は 1.0 : {{xy}} です</p>
+      <p>白目黒目比率は{{bw1}} : 1.0 : {{bw2}} です</p>
+      <p>H: {{h}}, S: {{s}}, V: {{v}}</p>
+      <p>{{sanpaku}}</p>
+      <a href="./">TOPに飛びます</a>
+    </div>
   </body>
 </html>
 

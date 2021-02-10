@@ -2,20 +2,19 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>imagenetの予測をするサイト</title>
+    <title>demo</title>
   </head>
   <body>
     <div class="xxx">
-    <h1>imagenetで画像の予測をします</h1>
-    <p>画像をアップロードしてください</p>
+    <h1>デモ--瞳の結果表示--</h1>
+    <h5>画像をアップロードしてください</h5>
     <form method="post" action="/send" enctype="multipart/form-data">
 　　  <input type="file" id="img_file" name="img_file" class="col-sm-4">
   　　<input type="submit" value="送信" class="btn">
-    <p>1MB以上の画像はアップロードできません</p>
+    <h6>1MB以上の画像はアップロードできません</h6>
 
     <p style="color: {{color}};"> {{massege}} </p>
 　　</form>
-  <p class="bottom">使用モデル　mobilenet 　<a href="https://arxiv.org/pdf/1704.04861.pdf">ソース</a></p>
   </div>
   </body>
 </html>
