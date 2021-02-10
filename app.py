@@ -10,6 +10,9 @@ import ast
 
 app = Flask(__name__)
 
+# アップロード先のフォルダを指定
+# UPLOAD_FOLDER = './static/image/'
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def index():
@@ -31,6 +34,7 @@ def posttest():
 
     buf = io.BytesIO()
     image = Image.open(img_file)
+    image.save(buf, 'png')
     qr_b64str = base64.b64encode(buf.getvalue()).decode("utf-8")
     qr_b64data = "data:image/png;base64,{}".format(qr_b64str)
 
