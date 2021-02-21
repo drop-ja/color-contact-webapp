@@ -38,7 +38,7 @@ def posttest():
     qr_b64str = base64.b64encode(buf.getvalue()).decode("utf-8")
     qr_b64data = "data:image/png;base64,{}".format(qr_b64str)
 
-    url = "https://ms4dcl5u4g.execute-api.us-east-2.amazonaws.com/Prod/post" 
+    url = "******"#APIのエンドポイント
     method = "POST"
     headers = {"Content-Type" : "application/json"}
 
